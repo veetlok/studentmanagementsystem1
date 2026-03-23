@@ -2,7 +2,8 @@ from lisaa_oppilas import lisaa_oppilas
 from nayta_oppilaat import nayta_oppilaat
 from etsi_oppilas import etsi_oppilas
 from poista_oppilas import poista_oppilas
-from kysy_arvosanat import kysy_arvosanat
+from arvosanat import lisaa_arvosana
+from arvosanat import nayta_arvosana
 
 # Ohjelman valikko.
 def valikko():
@@ -11,8 +12,9 @@ def valikko():
         print("1. Lisää oppilas.")
         print("2. Listaa oppilaat.")
         print("3. Etsi oppilas.")
-        print("4. Näytä arvosanat.")
-        print("5. Poista oppilas.")
+        print("4. Lisää oppilaan arvosana.")
+        print("5. Näytä oppilaan arvosana.")
+        print("6. Poista oppilas.")
         print("0. Poistu.")
 
         valinta = input("Valitse vaihtoehto: ")
@@ -24,8 +26,10 @@ def valikko():
         elif valinta == "3":
             etsi_oppilas()
         elif valinta == "4":
-            kysy_arvosanat()
+            lisaa_arvosana()
         elif valinta == "5":
+            nayta_arvosana()
+        elif valinta == "6":
             poista_oppilas()
         elif valinta == "0":
             break

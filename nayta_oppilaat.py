@@ -7,4 +7,4 @@ def nayta_oppilaat():
         return
     
     for o in oppilaat:
-        print(o.oppilas_id, o.nimi, o.ika)
+        print("ID:", o.oppilas_id,"|","NIMI:", o.nimi,"|","IKÄ:", o.ika)

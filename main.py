@@ -19,10 +19,12 @@ def valikko():
             lisaa_oppilas()
         elif valinta == "2":
             nayta_oppilaat()
-        # elif valinta == "3":
-        #     etsi_oppilas()
+        elif valinta == "3":
+            etsi_oppilas()
         # elif valinta == "4":
         #     anna_arvosanat()
+        elif valinta == "5":
+              poista_oppilas()
         elif valinta == "0":
             break
         else:

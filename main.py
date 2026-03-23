@@ -1,5 +1,6 @@
 from lisaa_oppilas import lisaa_oppilas
 from nayta_oppilaat import nayta_oppilaat
+from poista_oppilas import poista_oppilas
 
 # Ohjelman valikko.
 def valikko():

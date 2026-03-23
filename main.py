@@ -23,8 +23,6 @@ def valikko():
         #     etsi_oppilas()
         # elif valinta == "4":
         #     anna_arvosanat()
-        # elif valinta == "5":
-        #     poista_oppilas()
         elif valinta == "0":
             break
         else:

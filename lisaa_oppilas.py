@@ -2,16 +2,14 @@ from models import Oppilas
 from data import oppilaat
 
 def lisaa_oppilas():
-    while True:
+    while True: # Loopissa niin kauan kunnes oppilaan tiedot annetaan oikein
         try:
             nimi = input("Anna nimi: ")
             ika = int(input("Anna ikä: "))
             oppilas_id = id(nimi)
             break
-        except ValueError:
+        except ValueError:  # Jos ikä annetaan väärin, niin looppi jatkuu 
             print("Kirjoitus muoto väärä, yritä uudelleen.")
-        except:
-            print("Jotain meni pieleen, yritä uudelleen.")
     
     uusi = Oppilas(oppilas_id, nimi, ika)
     oppilaat.append(uusi)

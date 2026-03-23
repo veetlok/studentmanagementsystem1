@@ -1,6 +1,7 @@
 from lisaa_oppilas import lisaa_oppilas
 from nayta_oppilaat import nayta_oppilaat
 
+
 # Ohjelman valikko.
 def valikko():
     while True:

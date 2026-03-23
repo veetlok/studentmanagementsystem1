@@ -1,7 +1,6 @@
 from lisaa_oppilas import lisaa_oppilas
 from nayta_oppilaat import nayta_oppilaat
-
-
+from etsi_oppilas import etsi_oppilas
 # Ohjelman valikko.
 def valikko():
     while True:
@@ -19,8 +18,8 @@ def valikko():
             lisaa_oppilas()
         elif valinta == "2":
             nayta_oppilaat()
-        # elif valinta == "3":
-        #     etsi_oppilas()
+        elif valinta == "3":
+            etsi_oppilas()
         # elif valinta == "4":
         #     lisää_arvosanat()
         # elif valinta == "5":

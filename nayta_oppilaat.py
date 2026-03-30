@@ -4,7 +4,12 @@ from data import oppilaat
 def nayta_oppilaat():
     if not oppilaat:
         print("Ei oppilaita.")
+        print()
+        input("Paina nappia jatkaaksesi.")
         return
     
     for o in oppilaat:
         print("ID:", o.oppilas_id,"|","NIMI:", o.nimi,"|","IKÄ:", o.ika)
+        print()
+        input("Paina nappia jatkaaksesi.")
+        continue

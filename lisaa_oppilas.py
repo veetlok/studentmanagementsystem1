@@ -16,3 +16,5 @@ def lisaa_oppilas():
     oppilaat.append(uusi)
 
     print("Oppilas lisätty!", "ID:", oppilas_id, "|", "NIMI:", nimi, "|", "IKÄ:", ika) # Näyttää luodun henkilön.
+    print()
+    input("Paina nappia jatkaaksesi.")

@@ -3,7 +3,7 @@ from nayta_oppilaat import nayta_oppilaat
 from etsi_oppilas import etsi_oppilas
 from poista_oppilas import poista_oppilas
 from arvosanat import lisaa_arvosana
-from arvosanat import nayta_arvosana
+from nayta_arvosana import nayta_arvosana
 
 # Ohjelman valikko.
 def valikko():

@@ -8,7 +8,7 @@ from nayta_arvosana import nayta_arvosana
 # Ohjelman valikko.
 def valikko():
     while True:
-
+        
         print("1. Lisää oppilas.")
         print("2. Listaa oppilaat.")
         print("3. Etsi oppilas.")
@@ -17,21 +17,25 @@ def valikko():
         print("6. Poista oppilas.")
         print("0. Poistu.")
 
-        valinta = input("Valitse vaihtoehto: ")
+        try:
+            valinta = int(input("Valitse vaihtoehto: "))
+        except ValueError:
+            print("Anna kelvollinen luku!")
+            continue
 
-        if valinta == "1":
+        if valinta == 1:
             lisaa_oppilas()
-        elif valinta == "2":
+        elif valinta == 2:
             nayta_oppilaat()
-        elif valinta == "3":
+        elif valinta == 3:
             etsi_oppilas()
-        elif valinta == "4":
+        elif valinta == 4:
             lisaa_arvosana()
-        elif valinta == "5":
+        elif valinta == 5:
             nayta_arvosana()
-        elif valinta == "6":
+        elif valinta == 6:
             poista_oppilas()
-        elif valinta == "0":
+        elif valinta == 0:
             break
         else:
             input("Väärä valinta. Paina enteriä jatkaaksesi.")

@@ -1,6 +1,8 @@
 from models import Oppilas
 from data import oppilaat
 
+# Niilo
+
 kurssit = [
     "Matematiikka",
     "Äidinkieli",

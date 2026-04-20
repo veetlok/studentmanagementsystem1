@@ -5,6 +5,8 @@ from poista_oppilas import poista_oppilas
 from arvosanat import lisaa_arvosana
 from nayta_arvosana import nayta_arvosana
 
+# Joonas
+
 # Ohjelman valikko.
 def valikko():
     while True:

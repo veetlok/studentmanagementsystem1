@@ -2,6 +2,8 @@
 # from models import Oppilas
 from data import oppilaat
 
+# Niilo
+
 def poista_oppilas():
 
     try:

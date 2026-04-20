@@ -1,5 +1,7 @@
 from data import oppilaat
 
+# Joonas
+
 def etsi_oppilas():
     
     try:

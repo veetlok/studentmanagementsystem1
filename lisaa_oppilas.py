@@ -33,7 +33,7 @@ def lisaa_oppilas():
                 print()
                 print("Oppilas lisätty!", "ID:", oppilas_id, "|", "NIMI:", nimi, "|", "IKÄ:", ika) 
                 print()
-                input("Paina nappia jatkaaksesi.")
+                input("Paina enteriä jatkaaksesi.")
                 break
             
             except ValueError:

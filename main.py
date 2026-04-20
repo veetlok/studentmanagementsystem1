@@ -5,33 +5,43 @@ from poista_oppilas import poista_oppilas
 from arvosanat import lisaa_arvosana
 from nayta_arvosana import nayta_arvosana
 
+# Värejä otsikoita varten.
+sininenvari = "\033[34m"
+punainenvari = "\033[0;31m"
+resetti = "\033[0m"
+lihavoitu = "\033[1m"
+
 # Ohjelman valikko.
 def valikko():
     while True:
-
+        print(f"{lihavoitu}{sininenvari}===== VALIKKO ====={resetti}")
         print("1. Lisää oppilas.")
         print("2. Listaa oppilaat.")
         print("3. Etsi oppilas.")
         print("4. Lisää oppilaan arvosana.")
         print("5. Näytä oppilaan arvosana.")
         print("6. Poista oppilas.")
-        print("0. Poistu.")
+        print(f"0. {lihavoitu}{punainenvari}Poistu.{resetti}")
 
-        valinta = input("Valitse vaihtoehto: ")
+        try:
+            valinta = int(input("Valitse vaihtoehto: "))
+        except ValueError:
+            print("Anna kelvollinen luku!")
+            continue
 
-        if valinta == "1":
+        if valinta == 1:
             lisaa_oppilas()
-        elif valinta == "2":
+        elif valinta == 2:
             nayta_oppilaat()
-        elif valinta == "3":
+        elif valinta == 3:
             etsi_oppilas()
-        elif valinta == "4":
+        elif valinta == 4:
             lisaa_arvosana()
-        elif valinta == "5":
+        elif valinta == 5:
             nayta_arvosana()
-        elif valinta == "6":
+        elif valinta == 6:
             poista_oppilas()
-        elif valinta == "0":
+        elif valinta == 0:
             break
         else:
             input("Väärä valinta. Paina enteriä jatkaaksesi.")

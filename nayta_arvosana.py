@@ -1,10 +1,15 @@
 from data import oppilaat
 import numpy as np
 
-
+# Väreja otsikoita varten.
+sininenvari = "\033[34m"
+resetti = "\033[0m"
+lihavoitu = "\033[1m"
 
 def nayta_arvosana():
     
+    print(f"{lihavoitu}{sininenvari}===== Näytä Oppilaan Arvosana ====={resetti}")
+
     try:
          oppilas_id = int(input("Anna oppilaan ID: "))
     except ValueError:

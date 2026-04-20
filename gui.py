@@ -2,8 +2,7 @@ import tkinter
 import main
 
 # Veeti
-
-#from data import oppilaat
+# Gui:n pohja
 
 root = tkinter.Tk()
 root.title("Student Management System")
@@ -11,12 +10,6 @@ root.geometry("700x500")
 
 label = tkinter.Label(root, text="Tervetuloa oppilasjärjestelmään", font=("Arial", 14))
 label.pack(pady=10)
-
-#entry = tkinter.Entry(root, font=("Arial", 12))
-#entry.pack(pady=10)
-
-#button = tkinter.Button(root, text="Paina tästä", font=("Arial", 12), command=main.valikko)
-#button.pack(pady=10)
 
 button = tkinter.Button(root, text="Etsi oppilas", font=("Arial", 12), command=main.valikko)
 button.pack(pady=10)

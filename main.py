@@ -15,10 +15,10 @@ lihavoitu = "\033[1m"
 # Ohjelman valikko.
 def valikko():
     
-    print(f"{lihavoitu}{sininenvari}===== VALIKKO ====={resetti}")
 
     while True:
         
+        print(f"{lihavoitu}{sininenvari}===== VALIKKO ====={resetti}")
         print("1. Lisää oppilas.")
         print("2. Listaa oppilaat.")
         print("3. Etsi oppilas.")

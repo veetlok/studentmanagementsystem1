@@ -11,9 +11,11 @@ lihavoitu = "\033[1m"
 
 def lisaa_oppilas():
 
+    print(f"{lihavoitu}{sininenvari}===== Lisää Oppilas ====={resetti}")
+    
     # Looppi alkaa:
     while True:
-        print(f"{lihavoitu}{sininenvari}===== Lisää Oppilas ====={resetti}")
+        
 
         print("1. Lisää oppilas.")
         print("2. Päivitä oppilaan tiedot.")
@@ -40,7 +42,6 @@ def lisaa_oppilas():
                 print()
                 print("Oppilas lisätty!", "ID:", oppilas_id, "|", "NIMI:", nimi, "|", "IKÄ:", ika) 
                 print()
-                input("Paina enteriä jatkaaksesi.")
                 break
             
             except ValueError:
@@ -62,7 +63,6 @@ def lisaa_oppilas():
                 print()
                 print("Oppilas lisätty!", "ID:", oppilas_id, "|", "NIMI:", nimi, "|", "IKÄ:", ika) 
                 print()
-                input("Paina nappia jatkaaksesi.")
                 break
             
             except ValueError:

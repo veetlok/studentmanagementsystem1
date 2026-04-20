@@ -8,7 +8,7 @@ lihavoitu = "\033[1m"
 
 def etsi_oppilas():
     
-    print(f"{lihavoitu}{sininenvari}===== Etsi Oppilas ====={resetti}")
+    print(f"{lihavoitu}{sininenvari}===== ETSI OPPILAS ====={resetti}")
 
     try:
          oppilas_id = int(input("Anna oppilaan ID: "))

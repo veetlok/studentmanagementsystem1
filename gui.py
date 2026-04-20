@@ -1,5 +1,8 @@
 import tkinter
 import main
+
+# Veeti
+
 #from data import oppilaat
 
 root = tkinter.Tk()

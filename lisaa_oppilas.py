@@ -1,6 +1,8 @@
 from models import Oppilas
 from data import oppilaat
 
+# Aleksi
+
 def lisaa_oppilas():
 
     # Looppi alkaa:
@@ -38,7 +40,7 @@ def lisaa_oppilas():
                 print("Kirjoitus muoto väärä, yritä uudelleen.")
             
 
-
+        # Lisätyn oppilaan päivittäminen
         if valinta == 2:
             print("1. Päivitä nimi")
             print("2. Päivitä ikä.")

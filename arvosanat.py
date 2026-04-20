@@ -3,6 +3,11 @@ from data import oppilaat
 
 # Niilo
 
+# Väreja otsikoita varten.
+sininenvari = "\033[34m"
+resetti = "\033[0m"
+lihavoitu = "\033[1m"
+
 kurssit = [
     "Matematiikka",
     "Äidinkieli",
@@ -16,6 +21,9 @@ kurssit = [
 
 #lisää arvosana
 def lisaa_arvosana():
+
+    print(f"{lihavoitu}{sininenvari}===== Lisää Oppilaan Arvosana ====={resetti}")
+
     while True: # Loopissa niin kauan kunnes oppilaan tiedot annetaan oikein.     
         try:
             oppilas_id = int(input("Anna oppilaan ID: "))

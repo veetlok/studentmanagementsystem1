@@ -6,9 +6,17 @@ from arvosanat import lisaa_arvosana
 from nayta_arvosana import nayta_arvosana
 
 # Joonas
+# Värejä otsikoita varten.
+sininenvari = "\033[34m"
+punainenvari = "\033[0;31m"
+resetti = "\033[0m"
+lihavoitu = "\033[1m"
 
 # Ohjelman valikko.
 def valikko():
+    
+    print(f"{lihavoitu}{sininenvari}===== VALIKKO ====={resetti}")
+
     while True:
         
         print("1. Lisää oppilas.")
@@ -17,7 +25,7 @@ def valikko():
         print("4. Lisää oppilaan arvosana.")
         print("5. Näytä oppilaan arvosana.")
         print("6. Poista oppilas.")
-        print("0. Poistu.")
+        print(f"0. {lihavoitu}{punainenvari}Poistu.{resetti}")
 
         try:
             valinta = int(input("Valitse vaihtoehto: "))

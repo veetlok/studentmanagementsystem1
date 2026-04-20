@@ -5,12 +5,14 @@ from data import oppilaat
 sininenvari = "\033[34m"
 resetti = "\033[0m"
 lihavoitu = "\033[1m"
+# Aleksi
 
 def lisaa_oppilas():
 
     # Looppi alkaa:
     while True:
         print(f"{lihavoitu}{sininenvari}===== Lisää Oppilas ====={resetti}")
+
         print("1. Lisää oppilas.")
         print("2. Päivitä oppilaan tiedot.")
         print("3. Peruuta.")    
@@ -43,7 +45,29 @@ def lisaa_oppilas():
                 print("Kirjoitus muoto väärä, yritä uudelleen.")
             
 
+        # Uuden oppilaan lisääminen
+        if valinta == 1:
+            try:
+                nimi = input("Anna nimi: ")
+                ika = int(input("Anna ikä: "))
+                oppilas_id = id(nimi)
+                
+                # Kerää uuden oppilaan tiedot uuteen paikkaan
+                uusi = Oppilas(oppilas_id, nimi, ika)
+                oppilaat.append(uusi)
+                
+                # Näyttää luodun henkilön.
+                print()
+                print("Oppilas lisätty!", "ID:", oppilas_id, "|", "NIMI:", nimi, "|", "IKÄ:", ika) 
+                print()
+                input("Paina nappia jatkaaksesi.")
+                break
+            
+            except ValueError:
+                print("Kirjoitus muoto väärä, yritä uudelleen.")
+            
 
+        # Lisätyn oppilaan päivittäminen
         if valinta == 2:
             print("1. Päivitä nimi")
             print("2. Päivitä ikä.")

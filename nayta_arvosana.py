@@ -10,7 +10,7 @@ lihavoitu = "\033[1m"
 # Oppilaan ID:llä etsiminen ja valuerror jos virheellinen input
 def nayta_arvosana():
     
-    print(f"{lihavoitu}{sininenvari}===== Näytä Oppilaan Arvosana ====={resetti}")
+    print(f"{lihavoitu}{sininenvari}===== NÄYTÄ OPPILAAN ARVOSANAT ====={resetti}")
 
     try:
          oppilas_id = int(input("Anna oppilaan ID: "))

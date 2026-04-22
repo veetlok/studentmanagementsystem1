@@ -22,7 +22,7 @@ kurssit = [
 #lisää arvosana
 def lisaa_arvosana():
 
-    print(f"{lihavoitu}{sininenvari}===== Lisää Oppilaan Arvosana ====={resetti}")
+    print(f"{lihavoitu}{sininenvari}===== LISÄÄ OPPILAAN ARVOSANA ====={resetti}")
 
     while True: # Loopissa niin kauan kunnes oppilaan tiedot annetaan oikein.     
         try:

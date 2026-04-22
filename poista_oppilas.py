@@ -10,10 +10,10 @@ lihavoitu = "\033[1m"
 
 def poista_oppilas():
 
-    print(f"{lihavoitu}{sininenvari}===== Poista Oppilas ====={resetti}")
+    print(f"{lihavoitu}{sininenvari}===== POISTA OPPILAS ====={resetti}")
 
     try:
-        poistettava_oppilastunnus = (int(input("Anna oppilaan ID jonka haluat poistaa. : ")))
+        poistettava_oppilastunnus = (int(input("Anna oppilaan ID jonka haluat poistaa: ")))
     except ValueError:
          print("Virheellinen ID.")
          return

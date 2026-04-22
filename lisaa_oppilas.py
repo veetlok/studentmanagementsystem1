@@ -11,12 +11,11 @@ lihavoitu = "\033[1m"
 
 def lisaa_oppilas():
 
-    print(f"{lihavoitu}{sininenvari}===== Lisää Oppilas ====={resetti}")
     
     # Looppi alkaa:
     while True:
         
-
+        print(f"{lihavoitu}{sininenvari}===== LISÄÄ OPPILAS ====={resetti}")
         print("1. Lisää oppilas.")
         print("2. Päivitä oppilaan tiedot.")
         print("3. Peruuta.")    
@@ -71,6 +70,7 @@ def lisaa_oppilas():
 
         # Lisätyn oppilaan päivittäminen
         if valinta == 2:
+            print(f"{lihavoitu}{sininenvari}---- PÄIVITÄ TIETOJA ----{resetti}")
             print("1. Päivitä nimi")
             print("2. Päivitä ikä.")
     

@@ -11,15 +11,13 @@ lihavoitu = "\033[1m"
 
 
 def nayta_oppilaat():
-    print(f"{lihavoitu}{sininenvari}===== Listaa Oppilaat ====={resetti}")
+    print(f"{lihavoitu}{sininenvari}===== NÄYTÄ OPPILAAT ====={resetti}")
     if not oppilaat:
         print("Ei oppilaita.")
         print()
-        input("Paina enteriä jatkaaksesi.")
         return
     
     for o in oppilaat:        
         print("ID:", o.oppilas_id,"|","NIMI:", o.nimi,"|","IKÄ:", o.ika)
         print()
-        input("Paina enteriä jatkaaksesi.")
         continue
